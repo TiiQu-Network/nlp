@@ -11,7 +11,7 @@ postags = ['NOUN','VERB', 'ADJ', 'ADV'] # Keep nouns, adj, verbs
 from gensim.parsing.porter import PorterStemmer
 p = PorterStemmer()
 
-
+#converting dataframe type to word list for further pre-processing stages
 def extract_word_list(df):
     doc_list = df.text.values.tolist()
     word_list = [gensim.utils.simple_preprocess(txt, deacc=True, min_len=3) for txt in doc_list]
