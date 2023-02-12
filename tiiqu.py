@@ -1,5 +1,6 @@
 '''
 This module aims to loading, running basic cleansing and splitting of tiiqu dataset to train and test subsets.
+However, this module can be updated due to some pottential changes in the structure of the data we may have in the future.
 '''
 #importing relavant libraries
 import numpy as np
