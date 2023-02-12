@@ -5,6 +5,9 @@ from gensim.models.nmf import Nmf
 from gensim.models import CoherenceModel
 from sklearn.decomposition import NMF
 from operator import itemgetter
+''' This module aims to implement Non-Negative Matrix Factorization as a technique for topic modeling and since this approach has been proved to be efficient
+in terms of time complexity, it can be employed to have an estimation of topic numbers.
+'''
 def NMF(corpus, num_topics, dic):
     nmf = Nmf(corpus=corpus, num_topics=num_topics, id2word=dic,chunksize=2000,
         passes=5,
